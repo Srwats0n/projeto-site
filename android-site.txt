@@ -1,3 +1,11 @@
+#092F42 - verde escuro
+
+#7A8C96 - cinza claro solido
+
+#3DDB86 - verde claro solido
+
+#FFFFFF - branco seco solido
+
 Curiosidades de Tecnologia
 
 Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar

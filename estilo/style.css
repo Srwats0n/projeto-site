@@ -1,5 +1,73 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+@font-face {
+    font-family: 'Android';
+    src: url("../fontes/idroid.otf") format('opentype');
+    font-weight: normal;
+}
+
+/*
+#092F42 - verde escuro
+
+#7A8C96 - cinza claro solido
+
+#3DDB86 - verde claro solido
+
+#FFFFFF - branco seco solido
+*/
+
+:root {
+    --cor0: #c5edd6;
+    --cor1: #c5ebd6; /*background*/
+    --cor2: #83e1ad;
+    --cor3: #3ddc84;
+    --cor4: #2fa866;
+    --cor5: #1a5c37;
+    --cor6: #063d1e;
+    --cor7: #092F42;
+    --cor8: #7A8C96;
+    --cor9: #3DDB86;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
 body {
-    background-color: #c5edd6;
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-color: var(--cor5);
+}
+
+header > h1 {
+    color: var(--cor9);
+    font-family: var(--fonte-destaque);   
+}
+
+main article > h1 {
+    color: var(--cor6);
+    font-family: var(--fonte-android);
+}
+
+article > h2 {
+    font-family: var(--fonte-android);
+    color: var(--cor5);
+}
+
+aside > h3{
+    color: var(--cor7);
+}
+
+aside p > ins {
+    color: var(--cor7);
+}
+
+aside ul > li abbr {
+    color: var(--cor7);
 }
