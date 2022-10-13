@@ -48,11 +48,15 @@ body {
 
 header {
     background-color: var(--cor5);
+    min-height: 150px;
+    text-align: center;
 }
 
 header > h1 {
     color: white;
-    font-family: var(--fonte-destaque);   
+    font-family: var(--fonte-destaque);  
+    padding-top: 30px;
+    margin-bottom: 20px;
 }
 
 header > p {
