@@ -58,12 +58,18 @@ header > h1 {
     font-size: 3em; 
     padding-top: 30px;
     margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 header > p {
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
     color: white;
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
 }
 
 nav {
