@@ -68,6 +68,15 @@ main {
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
+    padding: 20px;
+    box-shadow: 1px 1px 3px 1px #092f4291;
+    margin-bottom: 30px;
+}
+
+.pequeno {
+    display: block;
+    width: 40%;
+    margin: auto;
 }
 
 main article > h1 {
