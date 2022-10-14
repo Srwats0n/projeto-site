@@ -217,6 +217,10 @@ aside ul > li abbr {
     color: var(--cor7);
 }
 
+.encerramento > p {
+    text-indent: 15px;
+}
+
 footer {
     background-image: linear-gradient(to bottom, var(--cor1), #2e9c5e, var(--cor5),  var(--cor6));
     box-shadow: 10px 10px 30px 10px var(--cor1);
