@@ -50,17 +50,18 @@ header {
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor6));
     min-height: 150px;
     text-align: center;
-    text-shadow: 2px 3px 2px #092f4291;
+    padding-top: 40px;
 }
 
 header > h1 {
     color: white;
     font-family: var(--fonte-destaque);
-    font-size: 3em; 
-    padding-top: 30px;
+    font-weight: normal;
+    font-size: 3em;
+    margin-bottom: 20px;   
     padding-left: 10px;
     padding-right: 10px;
-    
+    text-shadow: 2px 3px 2px #092f4291;    
 }
 
 header > p {
@@ -73,6 +74,7 @@ header > p {
     padding-bottom: 20px;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
     text-shadow: 3px 3px 2px #092f4291;
 }
 
@@ -82,16 +84,16 @@ nav {
     box-shadow: 3px 7px 9px 1px #092f4288;
 }
 
-nav > a {
+nav a {
     text-decoration: none;
     font-weight: bold;
-    color: white;
+    color: var(--cor2);
     padding: 10px;
     border-radius: 3px;
-    transition-duration: .5s;
+    transition-duration: .4s;
 }
 
-nav > a:hover {
+nav a:hover {
     background-color: var(--cor4);
     color: var(--cor6);
 }
@@ -103,25 +105,55 @@ main {
     max-width: 1000px;
     margin: auto;
     padding: 20px;
-    box-shadow: 1px 1px 3px 1px #092f4291;
+    box-shadow: 1px 3px 8px 1px #092f4265;
     margin-bottom: 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.pequeno {
-    display: block;
-    width: 40%;
-    margin: auto;
-}
-
-main article > h1 {
+article h1 {
     color: var(--cor6);
     font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
 }
 
-article > h2 {
+article h2 {
     font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.3em;
+    color: var(--cor5);
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    text-indent: 10px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 0px #092f4291;
+    padding: 2px;
+}
+
+article p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+article strong {
+    color: var(--cor5);
+    font-weight: bold;
+}
+
+article a {
+    background-color: var(--cor1);
+    color: var(--cor6);
+    text-decoration: none;
+    padding: 2px 4px;
+    border-radius: 7px;
+    
+}
+
+article a:hover {
+    text-decoration: underline;
     color: var(--cor5);
 }
 
@@ -129,12 +161,50 @@ img {
     width: 100%;
 }
 
+.pequeno {
+    display: block;
+    max-width: 350px;
+    margin: auto;
+}
+
+.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px 20px 59% 20px;
+    position: relative;      
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px #092f4269;
+}
+
 aside > h3{
-    color: var(--cor7);
+    background-color: var(--cor5);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 aside p > ins {
     color: var(--cor7);
+}
+
+aside > ul {
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
 }
 
 aside ul > li abbr {
@@ -142,6 +212,30 @@ aside ul > li abbr {
 }
 
 footer {
-    background-color: var(--cor7);
+    background-image: linear-gradient(to bottom, var(--cor1), #2e9c5e, var(--cor5),  var(--cor6));
+    box-shadow: 10px 10px 30px 10px var(--cor1);
+    text-shadow: 0px 1px 1px #092f4291;
     color: white;
+    text-align: center;
+    font-size: .8em;
+    padding: 5px;
+   
+}
+
+footer:hover {
+    color: var(--cor3);
+    transition: 0.1s;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--cor2);
+    font-weight: bolder;
+    text-decoration: underline;
+    transition: 0.1s;
 }
